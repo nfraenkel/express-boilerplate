@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Express Boilerplaye</title>
+        <title>JAM SE$H</title>
         <%- css('bootstrap') %>
         <%- css('style') %>
     </head>
@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="span10 offset2">
+                <div class="spa<%- js('app') %>n10 offset2">
                     <button class="the-button"><%= @action %></button>
                 </div>
             </div>
@@ -21,7 +21,7 @@
         <%- js('//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.3/underscore-min.js') %>
         <%- js('bootstrap') %>
         <%- js('add_module') %>
-        <%- js('app') %>
+        
     </body>
 
 </html>
