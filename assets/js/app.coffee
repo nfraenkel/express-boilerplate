@@ -1,20 +1,10 @@
 $ ->
-    app.add_module 'requests', ->
-        make_a_request = ->
-            $.ajax
-                type: 'POST'
-                data: 
-                    to_square: 5
-                url: '/square'
-                success: ({result}) ->
-                    alert "Success! #{result}"
-                error: ->
-                    alert 'Something Went Wrong!'
+    play_sound = (midi_code) ->
+        # Play the sound
+        alert "Play #{midi_code}"
 
-        { make_a_request }
-
-
-    app.add_module 'example', ->
-        button = $ '.the-button'
-        button.on 'click', ->
-            do app.requests.make_a_request
+    $(window).on 'keydown', (e) ->
+        console.log e.keyCode
+        console.log e
+        #Figure out what sound to play
+        #call play_sound
